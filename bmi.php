@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI表單</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .container{
+            width:50%;
+            height:80vh;
+            background-color: lightblue;
+            margin:auto;
+            padding-left:50px;
+            /* padding-top:5px; */
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
     <h1>計算BMI</h1>
     <h3>POST</h3>
     <form action="bmi_result.php" method='post'>
@@ -40,5 +54,6 @@
     </div>
 
     </form>
+    </div>
 </body>
 </html>

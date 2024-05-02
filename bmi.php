@@ -54,6 +54,8 @@
     </div>
 
     </form>
+    <h2>用a連結替代GET</h2>
+    <a href="bmi_result.php?weight=99&height=100">計算BMI</a>
     </div>
 </body>
 </html>

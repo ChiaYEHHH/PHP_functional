@@ -7,11 +7,14 @@
 </head>
 <body>
     <h1>登入成功</h1>
+    <?date_default_timezone_set("Asia/Taipei");?>
 
     <h2><?=$_GET['acc'];?>歡迎光臨</h2>
-    <a href="login.php">回登入頁</a>
+    <a href="login_cookie.php">回登入頁</a>
     <p>
-        <a href="login.php?login=1">回登入頁-已登入成功</a>
+        <a href="login_cookie.php">回登入頁-已登入成功</a>
+        <br>
+        <a href="logout.php">登出</a>
     </p>
 
 </body>

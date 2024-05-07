@@ -35,7 +35,7 @@
         
         echo "已登入";
         echo "<br>";
-        echo "<a href='./logout.php'>登出</a>";
+        echo "<a href='logout.php'>登出</a>";
 
     }else{
         if(isset($_SESSION["error"])){
@@ -44,7 +44,7 @@
     ?>
 
         
-        <form action="./login_check.php" method="post">
+        <form action="login_check.php" method="post">
         <div class="box">
             <label for="ID">帳號:</label>
             <input type="text" name="id_login" id="id_login">

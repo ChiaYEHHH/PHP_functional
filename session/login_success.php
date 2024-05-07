@@ -15,9 +15,9 @@
     ?>
     <h2>
     <?=$_SESSION['id_login']; ?>歡迎光臨</h2>
-    <a href="login.php">回登入頁</a>
+    <a href="login_session.php">回登入頁</a>
     <p>
-        <a href="./login_session.php?login=1">回登入頁-已登入成功</a>
+        <a href="login_session.php?login=1">回登入頁-已登入成功</a>
     </p>
     <p>
         <a href="logout.php">回登入頁-登出</a>

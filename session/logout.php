@@ -1,6 +1,6 @@
 <?php
 session_start();
-unset($_SESSION['login'],$_SESSION['error']);
+unset($_SESSION['id_login'],$_SESSION['error']);
 
 header("location:login_session.php");
 

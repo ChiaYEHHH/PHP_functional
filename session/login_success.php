@@ -10,14 +10,17 @@
 <body>
     <h1>登入成功</h1>
     <!-- session一定要先宣告開始 -->
-    <? session_start(); ?>
-    <h2><?= $_SESSION = ['id_login']; ?>歡迎光臨</h2>
+    <?php 
+    session_start(); 
+    ?>
+    <h2>
+    <?=$_SESSION['id_login']; ?>歡迎光臨</h2>
     <a href="login.php">回登入頁</a>
     <p>
         <a href="./login_session.php?login=1">回登入頁-已登入成功</a>
     </p>
     <p>
-        <a href="./logout.php?login=1">回登入頁-登出</a>
+        <a href="logout.php">回登入頁-登出</a>
     </p>
 
 </body>

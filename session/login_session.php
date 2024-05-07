@@ -31,11 +31,11 @@
     <h1>請登入</h1>
     <?php
     session_start();
-    if(isset($_SESSION['id_login']) && $_SESSION['id_login']=='admin'){
+    if(isset($_SESSION['id_login']) && $_SESSION['id_login']=='asdf'){
         
         echo "已登入";
         echo "<br>";
-        echo "<a href='logout.php'>登出</a>";
+        echo "<a href='./logout.php'>登出</a>";
 
     }else{
         if(isset($_SESSION["error"])){

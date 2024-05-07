@@ -29,7 +29,7 @@
 <body>
     <div class="container">
     <?php
-    if(isset($_GET['login']) && $_GET['login']==1){
+    if(isset($_SESSION['login']) && $_SESSION['login']==1){
         
         echo "已登入";
 

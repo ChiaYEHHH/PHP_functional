@@ -28,16 +28,23 @@
 </head>
 <body>
     <div class="container">
+    <h1>請登入</h1>
     <?php
-    if(isset($_SESSION['login']) && $_SESSION['login']==1){
+    session_start();
+    if(isset($_SESSION['id_login']) && $_SESSION['id_login']=='admin'){
         
         echo "已登入";
+        echo "<br>";
+        echo "<a href='logout.php'>登出</a>";
 
     }else{
+        if(isset($_SESSION["error"])){
+            echo "<span style='color:red'>{$_SESSION['error']}</span>";
+        }
     ?>
 
-        <h1>請登入</h1>
-        <form action="login_result.php" method="post">
+        
+        <form action="./login_check.php" method="post">
         <div class="box">
             <label for="ID">帳號:</label>
             <input type="text" name="id_login" id="id_login">
